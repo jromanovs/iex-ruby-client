@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.iextrading.com/1.0/stock/MSFT/batch?types=quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Jun 2018 13:26:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '916'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ctoken=bccefcce6def4d76aa68b377f9acd177; Domain=.iextrading.com; Path=/; Expires=Thu,
+        14 Jun 2018 01:26:15 GMT; Secure
+      Content-Security-Policy:
+      - default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self'
+        'unsafe-inline'; font-src data:; frame-src 'self'; connect-src 'self' https://auth.iextrading.com
+        https://api.iextrading.com https://api.iextrading.com wss://iextrading.com
+        wss://tops.iextrading.com wss://api.iextrading.com wss://iextrading.com; script-src
+        'self' 'unsafe-inline' 'unsafe-eval';
+      X-Content-Security-Policy:
+      - default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self'
+        'unsafe-inline'; font-src data:; frame-src 'self'; connect-src 'self' https://auth.iextrading.com
+        https://api.iextrading.com https://api.iextrading.com wss://iextrading.com
+        wss://tops.iextrading.com wss://api.iextrading.com wss://iextrading.com; script-src
+        'self' 'unsafe-inline' 'unsafe-eval';
+      Frame-Options:
+      - SAMEORIGIN
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+    body:
+      encoding: UTF-8
+      string: '{"quote":{"symbol":"MSFT","companyName":"Microsoft Corporation","primaryExchange":"Nasdaq
+        Global Select","sector":"Technology","calculationPrice":"previousclose","open":101.05,"openTime":1528810200772,"close":101.31,"closeTime":1528833600808,"high":101.449,"low":100.75,"latestPrice":101.31,"latestSource":"Previous
+        close","latestTime":"June 12, 2018","latestUpdate":1528761600000,"latestVolume":1397011,"iexRealtimePrice":0,"iexRealtimeSize":0,"iexLastUpdated":0,"delayedPrice":101.31,"delayedPriceTime":1528833600808,"extendedPrice":101.4,"extendedChange":0.09,"extendedChangePercent":0.00089,"extendedPriceTime":1528895400619,"previousClose":101.31,"change":0,"changePercent":0,"iexMarketPercent":0,"iexVolume":0,"avgTotalVolume":23398032,"iexBidPrice":0,"iexBidSize":0,"iexAskPrice":0,"iexAskSize":0,"marketCap":778384739029,"peRatio":29.97,"week52High":102.69,"week52Low":68.02,"ytdChange":0.18937766350861127}}'
+    http_version: 
+  recorded_at: Wed, 13 Jun 2018 13:26:15 GMT
+recorded_with: VCR 4.0.0

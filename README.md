@@ -113,6 +113,12 @@ IEX::Resources::Chart.get('MSFT', '1d', chart_interval: 10)
 
 See [#chart](https://iextrading.com/developer/docs/#chart) for detailed documentation or [chart/default](lib/iex/resources/chart/default.rb) and [chart/one_day](lib/iex/resources/chart/one_day.rb) for returned fields.
 
+### Batch requests
+
+batch = IEX::Resources::Batch.get(['MSFT', 'AAPL', 'IBM'])
+
+See [#batch-requests](https://iextrading.com/developer/docs/#batch-requests) for detailed documentation or [batch.rb](lib/iex/resources/batch.rb) for returned fields. 
+
 ## Errors
 
 ### SymbolNotFound

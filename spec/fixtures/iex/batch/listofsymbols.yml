@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.iextrading.com/1.0/stock/market/batch?symbols=MSFT,AAPL,IBM&types=quote
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Jun 2018 14:26:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2924'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - ctoken=13f9ce0c99bf44deb5938d3620841446; Domain=.iextrading.com; Path=/; Expires=Thu,
+        14 Jun 2018 02:26:12 GMT; Secure
+      Content-Security-Policy:
+      - default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self'
+        'unsafe-inline'; font-src data:; frame-src 'self'; connect-src 'self' https://auth.iextrading.com
+        https://api.iextrading.com https://api.iextrading.com wss://iextrading.com
+        wss://tops.iextrading.com wss://api.iextrading.com wss://iextrading.com; script-src
+        'self' 'unsafe-inline' 'unsafe-eval';
+      X-Content-Security-Policy:
+      - default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self'
+        'unsafe-inline'; font-src data:; frame-src 'self'; connect-src 'self' https://auth.iextrading.com
+        https://api.iextrading.com https://api.iextrading.com wss://iextrading.com
+        wss://tops.iextrading.com wss://api.iextrading.com wss://iextrading.com; script-src
+        'self' 'unsafe-inline' 'unsafe-eval';
+      Frame-Options:
+      - SAMEORIGIN
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+    body:
+      encoding: UTF-8
+      string: '{"MSFT":{"quote":{"symbol":"MSFT","companyName":"Microsoft Corporation","primaryExchange":"Nasdaq
+        Global Select","sector":"Technology","calculationPrice":"tops","open":101.72,"openTime":1528896600085,"close":101.31,"closeTime":1528833600808,"high":101.78,"low":101.07,"latestPrice":101.585,"latestSource":"IEX
+        real time price","latestTime":"10:26:06 AM","latestUpdate":1528899966475,"latestVolume":5913841,"iexRealtimePrice":101.585,"iexRealtimeSize":100,"iexLastUpdated":1528899966475,"delayedPrice":101.255,"delayedPriceTime":1528899065450,"extendedPrice":101.69,"extendedChange":0.105,"extendedChangePercent":0.00103,"extendedPriceTime":1528896599703,"previousClose":101.31,"change":0.275,"changePercent":0.00271,"iexMarketPercent":0.01286,"iexVolume":76052,"avgTotalVolume":23398032,"iexBidPrice":101.08,"iexBidSize":100,"iexAskPrice":101.59,"iexAskSize":200,"marketCap":780497618342,"peRatio":30.05,"week52High":102.69,"week52Low":68.02,"ytdChange":0.19208766350861126}},"AAPL":{"quote":{"symbol":"AAPL","companyName":"Apple
+        Inc.","primaryExchange":"Nasdaq Global Select","sector":"Technology","calculationPrice":"tops","open":192.5,"openTime":1528896600479,"close":192.28,"closeTime":1528833600805,"high":192.59,"low":191.81,"latestPrice":192.4,"latestSource":"IEX
+        real time price","latestTime":"10:25:48 AM","latestUpdate":1528899948054,"latestVolume":3302280,"iexRealtimePrice":192.4,"iexRealtimeSize":100,"iexLastUpdated":1528899948054,"delayedPrice":192.2,"delayedPriceTime":1528899069569,"extendedPrice":192.43,"extendedChange":0.03,"extendedChangePercent":0.00016,"extendedPriceTime":1528896600110,"previousClose":192.28,"change":0.12,"changePercent":0.00062,"iexMarketPercent":0.02237,"iexVolume":73872,"avgTotalVolume":26544051,"iexBidPrice":192.41,"iexBidSize":100,"iexAskPrice":192.45,"iexAskSize":100,"marketCap":945672551200,"peRatio":19.77,"week52High":194.2,"week52Low":142.2,"ytdChange":0.12571252405625466}},"IBM":{"quote":{"symbol":"IBM","companyName":"International
+        Business Machines Corporation","primaryExchange":"New York Stock Exchange","sector":"Technology","calculationPrice":"tops","open":146.97,"openTime":1528896610292,"close":146.87,"closeTime":1528833680876,"high":147.47,"low":146.79,"latestPrice":147.15,"latestSource":"IEX
+        real time price","latestTime":"10:24:06 AM","latestUpdate":1528899846730,"latestVolume":427721,"iexRealtimePrice":147.15,"iexRealtimeSize":100,"iexLastUpdated":1528899846730,"delayedPrice":147.27,"delayedPriceTime":1528899061880,"extendedPrice":146.8,"extendedChange":-0.35,"extendedChangePercent":-0.00238,"extendedPriceTime":1528896360027,"previousClose":146.87,"change":0.28,"changePercent":0.00191,"iexMarketPercent":0.01948,"iexVolume":8332,"avgTotalVolume":3906011,"iexBidPrice":147.19,"iexBidSize":100,"iexAskPrice":147.89,"iexAskSize":100,"marketCap":135079036228,"peRatio":10.59,"week52High":171.13,"week52Low":139.13,"ytdChange":-0.025885889430730624}}}'
+    http_version: 
+  recorded_at: Wed, 13 Jun 2018 14:26:12 GMT
+recorded_with: VCR 4.0.0
